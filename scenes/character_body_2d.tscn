@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dad1qo2g6cp48"]
+
+[ext_resource type="Script" uid="uid://be0hbww2m8tkj" path="res://character_body_2d.gd" id="1_g2brh"]
+[ext_resource type="Texture2D" uid="uid://c7r6v7e50eofm" path="res://assets/Untitled.png" id="2_dn4c7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4vejd"]
+radius = 20.0998
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_g2brh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, 4.76837e-07)
+scale = Vector2(0.153333, 0.155466)
+texture = ExtResource("2_dn4c7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_4vejd")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)

@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bab7ew0cfgkb7"]
+
+[ext_resource type="PackedScene" uid="uid://dad1qo2g6cp48" path="res://scenes/character_body_2d.tscn" id="1_w7c3h"]
+[ext_resource type="PackedScene" uid="uid://b6x6oxo5wkj5f" path="res://scenes/boss.tscn" id="2_w7c3h"]
+
+[node name="level" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_w7c3h")]
+position = Vector2(5, -5)
+
+[node name="Area2D" parent="." instance=ExtResource("2_w7c3h")]
+position = Vector2(14, -290)
